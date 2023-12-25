@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqfkw6afvpx4c"]
+
+[ext_resource type="Script" path="res://data/scripts/Player.gd" id="1_hvqkp"]
+[ext_resource type="Texture2D" uid="uid://cv5tlh3ywa4il" path="res://data/textures/car.png" id="2_o8efx"]
+
+[node name="Player" type="Node2D"]
+position = Vector2(488, 299)
+script = ExtResource("1_hvqkp")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_o8efx")
