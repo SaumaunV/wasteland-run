@@ -1,0 +1,113 @@
+[gd_scene load_steps=13 format=3 uid="uid://cqfkw6afvpx4c"]
+
+[ext_resource type="Texture2D" uid="uid://b2e81si12vgmk" path="res://data/textures/deserttileset.png" id="1_uftbi"]
+[ext_resource type="Script" path="res://data/scripts/TileMap.gd" id="2_pqxg1"]
+[ext_resource type="PackedScene" uid="uid://baek0km31k2ow" path="res://data/scenes/character.tscn" id="3_via8s"]
+[ext_resource type="PackedScene" uid="uid://c8irdeqaci2ea" path="res://data/scenes/cactus_02.tscn" id="4_krpbv"]
+[ext_resource type="PackedScene" uid="uid://42c22qhmr7ix" path="res://data/scenes/bones_01.tscn" id="5_t60tj"]
+[ext_resource type="PackedScene" uid="uid://cyec0jewoige4" path="res://data/scenes/grass_02.tscn" id="6_jnuio"]
+[ext_resource type="PackedScene" uid="uid://besc2csjce7j6" path="res://data/scenes/palm_01.tscn" id="7_ygl37"]
+[ext_resource type="PackedScene" uid="uid://bibr2eyko1c6p" path="res://data/scenes/rock_02.tscn" id="8_ajxw2"]
+[ext_resource type="PackedScene" uid="uid://6x0c5bgsyd3m" path="res://data/scenes/scrappile_01.tscn" id="9_l13f7"]
+[ext_resource type="PackedScene" uid="uid://btvc5naborw66" path="res://data/scenes/wreckage_01.tscn" id="10_qxiep"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_en82g"]
+texture = ExtResource("1_uftbi")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_rbidq"]
+sources/0 = SubResource("TileSetAtlasSource_en82g")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_rbidq")
+format = 2
+script = ExtResource("2_pqxg1")
+
+[node name="Player" parent="." instance=ExtResource("3_via8s")]
+
+[node name="Cactus02" parent="." instance=ExtResource("4_krpbv")]
+position = Vector2(377, 180)
+
+[node name="Bones01" parent="." instance=ExtResource("5_t60tj")]
+position = Vector2(-412, 214)
+
+[node name="Grass02" parent="." instance=ExtResource("6_jnuio")]
+position = Vector2(-754, 22)
+
+[node name="Palm01" parent="." instance=ExtResource("7_ygl37")]
+position = Vector2(-438, -220)
+scale = Vector2(1.29688, 1.40625)
+
+[node name="Rock02" parent="." instance=ExtResource("8_ajxw2")]
+position = Vector2(331, -284)
+
+[node name="Scrappile01" parent="." instance=ExtResource("9_l13f7")]
+position = Vector2(-171, -513)
+
+[node name="Wreckage01" parent="." instance=ExtResource("10_qxiep")]
+position = Vector2(849, -107)
