@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyec0jewoige4"]
+
+[ext_resource type="Texture2D" uid="uid://2adbuxh4tcvl" path="res://data/textures/grass02.png" id="1_nt4do"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jjnya"]
+radius = 15.0
+height = 88.0
+
+[node name="Grass02" type="Sprite2D"]
+texture = ExtResource("1_nt4do")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 5)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_jjnya")

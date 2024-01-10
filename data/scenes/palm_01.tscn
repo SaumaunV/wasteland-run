@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://besc2csjce7j6"]
+
+[ext_resource type="Texture2D" uid="uid://ch17mf1cxu3il" path="res://data/textures/palm01.png" id="1_53imo"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qyrtq"]
+radius = 4.0
+height = 104.0
+
+[node name="Palm01" type="Sprite2D"]
+texture = ExtResource("1_53imo")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 7)
+shape = SubResource("CapsuleShape2D_qyrtq")

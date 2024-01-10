@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8irdeqaci2ea"]
+
+[ext_resource type="Texture2D" uid="uid://dlov7mvhwkkff" path="res://data/textures/cactus02.png" id="1_2aqny"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t6co0"]
+radius = 19.0
+height = 126.0
+
+[node name="Cactus02" type="Sprite2D"]
+texture = ExtResource("1_2aqny")
+
+[node name="Sprite2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D"]
+shape = SubResource("CapsuleShape2D_t6co0")

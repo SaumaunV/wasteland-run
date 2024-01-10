@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://btvc5naborw66"]
+
+[ext_resource type="Texture2D" uid="uid://bur30bytqy32g" path="res://data/textures/wreckage01.png" id="1_kidaw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f24rl"]
+size = Vector2(107, 49)
+
+[node name="Wreckage01" type="Sprite2D"]
+texture = ExtResource("1_kidaw")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(3.5, -0.5)
+shape = SubResource("RectangleShape2D_f24rl")
